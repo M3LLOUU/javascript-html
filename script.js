@@ -1,47 +1,26 @@
-{
-let a = 5; 
-let b = "5";
+let idade = 12;
 
-// conversão automáica de tipos
-if(a = b){
-    console.log("true");
-}else{
-    console.log("false");
-}
-}
 
-{
-    let a = 5; 
-    let b = "5";
-
-// Comparação estrita de tipos
-if(a === b){
-    console.log("true");
-}else{
-    console.log("false");
-}
+if (idade < 13) {
+    console.log("Criança.");
+} else if (idade < 18) {
+    console.log("Adolescente.");
+} else if (idade < 60) {
+    console.log("Adulto.");
+} else {
+    console.log("Idoso.");
 }
 
-{
-    let a = 5; 
-    let b = "5";
+/*
+    inteiro idade = 20
 
-// Comparação diferente
-if (a != b){
-    console.log("true");
-}else{
-    console.log("false");
-}
-}
-
-{
-    let a = 5; 
-    let b = "5";
-
-// Comparação estrita diferente
-if (a !== b){
-    console.log("true");
-}else{
-    console.log("false");
-}
-}
+    se (idade < 13) {
+        escreva("Criança.")
+    } senão se (idade < 18) {
+        escreva("Adolescente.")
+    } senão se (idade < 60) {
+        escreva("Adulto.")
+    } senão {
+        escreva("Idoso.")
+    }
+*/
