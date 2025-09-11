@@ -1,26 +1,13 @@
-let idade = 12;
+// Loop de Repetições For
 
-
-if (idade < 13) {
-    console.log("Criança.");
-} else if (idade < 18) {
-    console.log("Adolescente.");
-} else if (idade < 60) {
-    console.log("Adulto.");
-} else {
-    console.log("Idoso.");
+for (let i = 0; i <= 10; i++) {
+    console.log(`Número ${i}`);
 }
 
-/*
-    inteiro idade = 20
 
-    se (idade < 13) {
-        escreva("Criança.")
-    } senão se (idade < 18) {
-        escreva("Adolescente.")
-    } senão se (idade < 60) {
-        escreva("Adulto.")
-    } senão {
-        escreva("Idoso.")
-    }
+/* Portugol
+
+    para (inteiro i = 1; i <= 10; i++) {
+        escreva("Número " + i);
+
 */
