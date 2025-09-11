@@ -1,11 +1,13 @@
-let nome = "Jaime";
-let idade = 20;
-let cidade = "Pomerode - SC";
-let altura = 1.77;
-let ehHumano = true;
+let texto = "Olá Mundo!"
+let numer = 42;
+let pi = 3.14;
+let booleano = true;
+let nulo = null;
+let indefinido;
 
-console.log("Meu nome é", nome);
-console.log("Tenho", idade, "anos");
-console.log("Moro em", cidade);
-console.log("Minha altura é", altura, "m");
-console.log("É humano?", ehHumano);
+console.log(typeof texto); // string
+console.log(typeof numer); // number
+console.log(typeof pi); // number
+console.log(typeof booleano); // boolean
+console.log(typeof nulo); // object (this is a known quirk in JavaScript)
+console.log(typeof indefinido); // undefined
