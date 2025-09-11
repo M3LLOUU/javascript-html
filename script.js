@@ -1,13 +1,17 @@
-// Loop de Repetições For
+let contador = 1;
 
-for (let i = 0; i <= 10; i++) {
-    console.log(`Número ${i}`);
+while (contador <= 3) {
+    console.log(`Contador = ${contador}`);
+    contador++;
 }
 
+/*
 
-/* Portugol
-
-    para (inteiro i = 1; i <= 10; i++) {
-        escreva("Número " + i);
+    inteiro contador = 1
+    
+    enquanto (contador <= 3) {
+        escreva("Contador = ", contador)
+        contador = contador + 1
+    }
 
 */
