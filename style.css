@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #2d3748;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 320px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 100%;
+    height: 80px;
+    background-color: #4a5568;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 20px;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Number buttons */
+button:not(.clear):not(.equals) {
+    background-color: #4a5568;
+    color: white;
+}
+
+button:not(.clear):not(.equals):hover {
+    background-color: #718096;
+}
+
+/* Operator buttons */
+button:nth-child(4n),
+button:nth-child(4n-1),
+button:nth-child(4n-2),
+button:nth-child(4n-3) {
+    background-color: #f56565;
+    color: white;
+}
+
+button:nth-child(4n):hover,
+button:nth-child(4n-1):hover,
+button:nth-child(4n-2):hover,
+button:nth-child(4n-3):hover {
+    background-color: #fc8181;
+}
+
+/* Clear button */
+.clear {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #f56565;
+}
+
+/* Equals button */
+.equals {
+    background-color: #38a169;
+    color: white;
+    grid-column: span 1;
+}
+
+.equals:hover {
+    background-color: #48bb78;
+}
+
+/* Zero button */
+.zero {
+    grid-column: span 2;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    button {
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    #result {
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
